@@ -9,4 +9,9 @@ Contents are based on Berryville Institute for Machine Learning (BIML) Architect
 
 Elevation of MLSec is © 2024 Kantega AS. This work is licensed under the Creative Commons Attribution 4.0 International license ([https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)).
 
-Working group: Elias Brattli Sørensen, Jorun Kristin Bremseth, Emil Jakobus Schroeder, Edvard Kristoffer Karlsen, August Heltne.
+## Working group
+- Author: Elias Brattli Sørensen. 
+- Design: Jorun Kristin Bremseth.
+- QA and advise: Emil Jakobus Schroeder, Edvard Kristoffer Karlsen and August Heltne.
+
+
