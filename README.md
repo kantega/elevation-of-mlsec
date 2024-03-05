@@ -1,12 +1,27 @@
 # Elevation of MLsec
-Elevation of MLsec is an unofficial Machine Learning Security (MLsec) extension of Microsoft's Elevation of Privilege threat modeling card game. These playing cards portray risks associated with Machine Learning systems that have been identified by research groups. It is suitable to play this game with or without the original Elevation of Privilege deck depending on the nature of what you're threat modeling.
+Elevation of MLsec is an unofficial Machine Learning Security (MLsec) extension of Microsoft's Elevation of Privilege threat modeling card game. These playing cards portray risks associated with building or fielding machine learning (ML) systems that have been identified by research groups. It is suitable to play this game with or without the original Elevation of Privilege deck depending on the nature of what you're threat modeling. The intention of these cards is primarily to improve the security *of* ML systems themselves, as opposed to using ML for security.
 
-- [How to play](./how-to-play.md)
-- [Cards](./cards.yaml)
 
 ## Source material
 
 This work is mainly based on Berryville Institute for Machine Learnings (BIML)’s architectural risk analysis for machine learning systems (BIML-78) and their LLM analysis (BIML-LLM24), found on [berryvilleiml.com](https://berryvilleiml.com). We have also added a few somewhat supplementary LLM specific threats from OWASP’s TOP 10 list for Large Language Model Applications found on [owasp.org](https://owasp.org/www-project-top-10-for-large-language-model-applications/). To anyone curious about how the risk frameworks are mapped to our cards and applied in this game, please check out [risk-frameworks.md](./ml-risk-frameworks/risk-frameworks.md) and [cards.yaml](cards.yaml). Please note that this game is *not* a comprehensive representation of the risks frameworks, and to get a "full" coverage we recommend bringing the frameworks along to threat modeling sessions. The source material is found in the [ml-risk-frameworks](./ml-risk-frameworks/) folder.
+
+## Audience
+
+We hope that this game helps spread the message of the important work published by BIML and the OWASP foundation. 
+
+The following roles may find use for these cards as a way to get started with security engineering in an organization that is employing machine learning in some way:
+1) Security practitioners can use this game to perform relevant threat modeling coaching with ML engineering teams. 
+2) ML practitioners and engineers may use this deck as part of their thread modeling process. 
+3) Software professionals integrating their "traditional software system" with an ML component can use these cards to understand the scope of potential risks that is imported from the ML component.
+
+## Resources
+
+- [The deck](./elevation-of-MLsec-cards.pdf)
+- [The deck with lines for print/cut](./print-ready/elevation-of-MLsec-print-ready-lined.pdf)
+- [How to play](./how-to-play.md)
+- [Overview of card contents](./cards.yaml)
+- [ML risk frameworks](./ml-risk-frameworks/risk-frameworks.md)
 
 ## Licenses
 
