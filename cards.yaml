@@ -1,10 +1,22 @@
-# This is inspied by Fraser Scott's Alexa implementation https://github.com/zeroXten/alexa_threat_model_game/blob/master/cards.yaml 
+# This is inspied by Fraser Scott's Alexa implementation of EoP https://github.com/zeroXten/alexa_threat_model_game/blob/master/cards.yaml 
 # 
+sources:
+  BIML_78:
+    title: Architectural Risk Analysis of Machine Learning Systems
+    identifier_format: <component label>:<risk number>:<descriptor>
+    url: https://berryvilleiml.com/results/ara.pdf
+  BIML_LLM_24:
+    title: Architectural Risk Analysis of Large Language Models
+    identifier_format: LLM:<component label>:<risk number>:<descriptor>
+    url: https://berryvilleiml.com/results/BIML-LLM24.pdf
+  OWASP_LLM:
+    title: OWASP Top 10 Risks for Large Language Model Applications
+    identifier_format: OWASP LLM:risk number
+    url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
 suit_order:
   - Model Risks
   - Output Risks
   - Input Risks
-
   - Dataset Risks
 rank_order: [2,3,4,5,6,7,8,9,10,'J','Q','K','A']
 ranks:
@@ -25,212 +37,266 @@ suits:
   Model risk:
     2: 
       title: Catastrophic forgetting
-      reference: eval:5:catastrophic forgetting
+      source: BIML_78
+      identifier: eval:5:catastrophic forgetting
       description: When a model is filled with too much overlapping information, collisions in the representation space may lead to the model “forgetting” information.
     3: 
       title: Oscillation
-      reference: alg:8:oscillation
+      source: BIML_78
+      identifier: alg:8:oscillation
       description: An ML system may end up oscillating and not properly converging if using gradient descent in a space with a misleading gradient.
     4: 
-      title: 
-      reference: 
-      description: 
+      title: Randomness
+      source: BIML_78
+      identifier: alg:4:randomness
+      description: Setting weights and thresholds with a bad RNG can damage system behavior and lead to subtle security issues.
     5: 
-      title: 
-      reference: 
-      description: 
+      title: Online system manipulation
+      source: BIML_78
+      identifier: alg:1:online
+      description: When an ML system system online keeps learning during operations, clever attackers can nudge the model so that it drifts from its intended operational profile.
     6:
-      title: 
-      reference: 
-      description: 
+      title: Overfitting
+      source: BIML_78
+      identifier: eval:1:overfitting
+      description: The model learns its training dataset so well that it’s no longer able to generalize outside of the training set and will perform poorly.
     7:
-      title: 
-      reference: 
-      description:  
+      title: Hyperparameters
+      source: BIML_78
+      identifier: inference:3:hyperparameters
+      description: An attacker that can control the hyperparameters can manipulate the future training of the machine learning model
     8:
-      title: 
-      reference: 
-      description:
+      title: Hosting
+      source: BIML_78
+      identifier: inference:4:hosting
+      description: The server where the model is hosted is insufficiently protected against unauthorized parties.
     9:
-      title: 
-      reference: 
-      description:
+      title: Hyperparameter sensitivity
+      source: BIML_78
+      identifier: alg:10:hyperparameter sensitivity
+      description: Sensitive hyperparameters that have been set experimentally may not be sufficient for the intended problem space, and can lead to overfitting.
     10:
-      title: 
-      reference: 
-      description:
+      title: Model theft
+      source: BIML_78
+      identifier: model:5:steal the box
+      description: Stealing ML system knowledge is possible through direct input/output observation, enabling attackers to reverse engineer the model.
     J:
-      title: 
-      reference: 
-      description:
+      title: Training set reveal
+      source: BIML_78
+      identifier: model:4:training set reveal
+      description: Most ML algorithms learn a great deal about its data and store a representation internally. This data may be sensitive, and can potentially be extracted from the model.
     Q:
-      title: 
-      reference: 
-      description:
+      title: Trojanized model
+      source: BIML_78
+      identifier: model:2:Trojan
+      description: Model transfer leads to the possibility that what is being reused may be a Trojaned (or otherwise damaged) version of the model.
     K:
-      title: 
-      reference: 
-      description:  
+      title: Improper re-use of model
+      source: BIML_78
+      identifier: model:1:improper re-use
+      description: ML models are re-used in transfer situations, where a pre-trained model is specialized toward a new use case. The model may be transferred into a problem space it’s not designed for.
+
     A:
       title: 
-      reference: 
-      description: 
+      source:
+      identifier: 
+      description: You have invented your own risk associated with machine learning models.
+
   Input risk:
     2: 
-      title: 
-      reference: 
-      description:
+      title: LLM feedback scores
+      source: BIML_LLM_24
+      identifier: LLM:inference:6:feedback scores
+      description: Some LLM chat systems allow user feedback as a parameter for tuning their system. This can be abused by attackers that give feedback in a coordinated fashion to nudge the ML system.
     3: 
-      title: 
-      reference: 
-      description:
+      title: Open to the public
+      source: BIML_LLM_24
+      identifier: LLM:input:3:open to the public
+      description: An LLM model is often open to the public, which makes it susceptible to attacks from users.
     4: 
-      title: 
-      reference: 
-      description:
+      title: Sponge input
+      source: BIML_LLM_24
+      identifier: LLM:input:5:sponge input
+      description: A sponge attack provides an LLM system with input that is more costly to process than “normal”. Like a DoS attack, as it seeks to exhaust processing budget.
     5:
-      title: 
-      reference: 
-      description: 
+      title: Input ambiguity
+      source: BIML_LLM_24
+      identifier: LLM:input:6:input ambiguity
+      description: English, the main interface language for LLMs, is an ambiguous interface. Natural language can be misleading, making LLMs susceptible to misinformation.
     6:
-      title: 
-      reference: 
-      description:
+      title: Text encoding
+      source: BIML_78
+      identifier: raw:7:text encoding
+      description: An ML system engineered with one text encoding scheme in mind might yield surprising results if presented with a differently encoded text.
     7:
-      title: 
-      reference: 
-      description:
+      title: Denial of service
+      source: BIML_78
+      identifier: system:10:denial of service
+      description: Denial of Service attacks can have a massive impact on a critical ML system. When an ML system breaks down, recovery may not be possible.
     8:
-      title: 
-      reference: 
-      description:
+      title: User risk
+      source: BIML_78
+      identifier: inference:5:user risk
+      description: A user may expose their personal data and their interests to the owners of an ML system when they interact with the system.
     9:
-      title: 
-      reference: 
-      description:
+      title: Dirty input
+      source: BIML_78
+      identifier: input:3:dirty input
+      description: Dirty inputs can be hard to process, and may be leveraged by an attacker adding noise in their prompts or in data sources for future training.
     10:
-      title: 
-      reference: 
-      description:
+      title: Controlled input stream
+      source: BIML_78
+      identifier: input:2:controlled input stream
+      description: Outside sources of input may be manipulated by an attacker.
     J:
-      title: 
-      reference: 
-      description:
+      title: Looped input
+      source: BIML_78
+      identifier: input:4:looped input
+      description: ML system output to the real world may feed back into training data or input, leading to a feedback loop, termed recursive pollution.
     Q:
-      title: 
-      reference: 
-      description:
+      title: Prompt injection
+      source: BIML_78
+      identifier: LLM:input:2:prompt injection
+      description: Input manipulation for LLMs. An attacker manipulates a large language model (LLM) through malicious inputs to override initial instructions given in system prompts.
     K:  
-      title: 
-      reference: 
-      description:
+      title: Malicious input
+      source: BIML_78
+      identifier: input:1:adversarial examples
+      description: Fool a machine learning system by providing malicious input that causes the ML system to make a false prediction or categorization.
     A: 
       title: 
-      reference: 
-      description:
+      source:
+      identifier: 
+      description: You have invented your own risk associated with machine learning input.
   Output risk:
     2:
-      title: 
-      reference: 
-      description: 
+      title: Cry wolf
+      source: BIML_78
+      identifier: system:6:cry wolf
+      description: If an ML model is integrated into a security decision and raises too many alarms, its output may be ignored.  
     3: 
-      title: 
-      reference: 
-      description:
+      title: Black box discrimination
+      source: BIML_78
+      identifier: system:1:black box discrimination
+      description: ML systems that operate with high impact decisions based on personal data carry the risk of illegal discrimination based on bias.
     4: 
-      title: 
-      reference: 
-      description:
+      title: LLM overreliance
+      source: OWASP_LLM
+      identifier: OWASP LLM09
+      description: Dependence on an LLM without oversight may lead to misinformation and legal concerns. It will also be hard to detect an attack against the LLM system.
     5: 
-      title: 
-      reference: 
-      description:
+      title: Inscrutability
+      source: BIML_78
+      identifier: output:4:inscrutability
+      description: In far too many cases with ML, nobody is really sure how the trained systems do what they do. This negatively affects trustworthiness.
     6:
-      title: 
-      reference: 
-      description:
+      title: Miscategorization
+      source: BIML_78
+      identifier: output:3:miscategorization
+      description: Bad output due to internal bias, malicious input or other attacks may escape into the world.
     7:
-      title: 
-      reference: 
-      description:
+      title: Transparency
+      source: BIML_78
+      identifier: output:5:transparency
+      description: It is easier to perform attacks undetected on a black-box system which is not transparent about how it works.
     8:
-      title: 
-      reference: 
-      description:
+      title: Confidence scores
+      source: BIML_78
+      identifier: inference:3:confidence scores
+      description: An ML model’s confidence scores can help an attacker tweak inputs to make the system misbehave.
     9:
-      title: 
-      reference: 
-      description:
+      title: Wrongness
+      source: BIML_LLM_24
+      identifier: LLM:output:2:wrongness
+      description: LLMs are stochastic in their nature, and can generate highly convincing misinformation in their attempt to satisfy the prediction of the next tokens from a prompt.
     10:
-      title: 
-      reference: 
-      description:
+      title: Excessive LLM agency
+      source: OWASP_LLM
+      identifier: OWASP LLM08
+      description: An LLM-based system may undertake actions leading to unintended consequences if granted excessive functionality, permissions, or autonomy.
     J:
-      title: 
-      reference: 
-      description:
+      title: Overconfidence
+      source: BIML_78
+      identifier: system:2:overconfidence
+      description: An ML model integrated into a system with its output treated as high confidence data may cause a range of unexpected issues.
     Q:
-      title: 
-      reference: 
-      description:
+      title: Error propagation
+      source: BIML_78
+      identifier: system:5:error propagation
+      description: When ML output is input to a larger decision process, errors in the ML subsystem may propagate in unforeseen ways. 
     K:  
-      title: 
-      reference: 
-      description:
+      title: Output manipulation
+      source: BIML_78
+      identifier: output:1:direct
+      description: An attacker directly manipulates the output stream getting between the ML system and its receiver. This may be hard to detect because models are sometimes opaque.
     A: 
       title: 
-      reference: 
-      description:
+      source:
+      identifier: 
+      description: You have invented your own risk associated with machine learning output.
   Dataset risk:
     2: 
-      title: 
-      reference: 
-      description:
+      title: Metadata
+      source: BIML_78
+      identifier: raw:10:metadata
+      description: Metadata may accidentally degrade generalization since a model learns a feature of the metadata instead of the content itself.
     3: 
-      title: 
-      reference: 
-      description:
+      title: Data rights
+      source: BIML_LLM_24
+      identifier: LLM:raw:4:data rights
+      description: Copyrighted, privacy protected or otherwise legally encumbered data are scraped from the internet to train ML models. This can lead to expensive legal entanglements.
     4: 
-      title: 
-      reference: 
-      description:
+      title: Partitioning
+      source: BIML_78
+      identifier: assembly:4:partitioning
+      description: Bad data partitions for training, validation and testing datasets may lead to a misbehaving ML system.
     5: 
-      title: 
-      reference: 
-      description:
+      title: Normalization
+      source: BIML_78
+      identifier: assembly:3:normalize
+      description: Normalization changes the nature of raw data, and may destroy the feature of interest by introducing too much bias.
     6:
-      title: 
-      reference: 
-      description:
+      title: Annotation
+      source: BIML_78
+      identifier: assembly:2:annotation
+      description: The way data is annotated into features can be directly attacked, introducing attacker bias into a system.
     7:
-      title: 
-      reference: 
-      description:
+      title: Encoding integrity
+      source: BIML_78
+      identifier: assembly:1:encoding integrity
+      description: Pre-processing and encoding of the data can lead to encoding integrity issues if the data has bias or discrimination in its nature.
     8:
-      title: 
-      reference: 
-      description:
+      title: Bad evaluation data
+      source: BIML_78
+      identifier: eval:2:bad eval data
+      description: A bad evaluation dataset can give unrealistic projections to how the model will perform when it is shipped to production.
     9:
-      title: 
-      reference: 
-      description:
+      title: Storage
+      source: BIML_78
+      identifier: data:4:storage
+      description: Data may be stored and managed insecurely. Who has access to the data, and why?
     10:
-      title: 
-      reference: 
-      description:
+      title: Recursive pollution
+      source: BIML_LLM_24
+      identifier: LLM:raw:1:recursive pollution
+      description: An ML model (LLM or other) generates incorrect content that content finds its way into future training data, which can damage the accuracy and reliability of the model.
     J:
-      title: 
-      reference: 
-      description:
+      title: Data integrity
+      source: BIML_78
+      identifier: system:2:data integrity
+      description: If distributed datasets do not have proper integrity checks in place, data can be tampered with undetected as it passes between components.
     Q:
-      title: 
-      reference: 
-      description:
+      title: Data confidentiality
+      source: BIML_78
+      identifier: raw:1:data confidentiality
+      description: Sensitive and confidential data that is used for ML training can be disclosed with extraction attacks.
     K: 
-      title: 
-      reference: 
-      description: 
+      title: Data poisoning
+      source: BIML_78
+      identifier: data:1:poisoning
+      description: An attacker intentionally manipulates data to disrupt, introduce bias, control or otherwise influence ML training. On the internet, lots of data are already poisoned “by default”.
     A: 
       title: 
-      reference: 
-      description:
+      source:
+      identifier: 
+      description: You have invented your own risk associated with machine learning datasets.
