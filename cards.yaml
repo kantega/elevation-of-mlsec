@@ -231,6 +231,7 @@ suits:
       description: An attacker directly manipulates the output stream getting between the ML system and its receiver. This may be hard to detect because models are sometimes opaque.
     A: 
       title: 
+      title: 
       source:
       identifier: 
       description: You have invented your own risk associated with machine learning output.
