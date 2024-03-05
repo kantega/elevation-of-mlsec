@@ -13,7 +13,7 @@ We hope that this game helps spread the message of the important work published 
 The following roles may find use for these cards as a way to get started with security engineering in an organization that is employing machine learning in some way:
 1) Security practitioners can use this game to perform relevant threat modeling coaching with ML engineering teams. 
 2) ML practitioners and engineers may use this deck as part of their thread modeling process. 
-3) Software professionals integrating their "traditional software system" with an ML component can use these cards to understand the scope of potential risks that is imported from the ML component.
+3) Software professionals integrating their "traditional software system" with an ML component can use these cards to understand the scope of potential risks that come from integrating the ML component.
 
 ## Resources
 
