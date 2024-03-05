@@ -1,0 +1,236 @@
+# This is inspied by Fraser Scott's Alexa implementation https://github.com/zeroXten/alexa_threat_model_game/blob/master/cards.yaml 
+# 
+suit_order:
+  - Model Risks
+  - Output Risks
+  - Input Risks
+
+  - Dataset Risks
+rank_order: [2,3,4,5,6,7,8,9,10,'J','Q','K','A']
+ranks:
+  2: two
+  3: three
+  4: four
+  5: five
+  6: six
+  7: seven
+  8: eight
+  9: nine
+  10: ten
+  J: Jack
+  Q: Queen
+  K: King
+  A: Ace
+suits:
+  Model risk:
+    2: 
+      title: Catastrophic forgetting
+      reference: eval:5:catastrophic forgetting
+      description: When a model is filled with too much overlapping information, collisions in the representation space may lead to the model “forgetting” information.
+    3: 
+      title: Oscillation
+      reference: alg:8:oscillation
+      description: An ML system may end up oscillating and not properly converging if using gradient descent in a space with a misleading gradient.
+    4: 
+      title: 
+      reference: 
+      description: 
+    5: 
+      title: 
+      reference: 
+      description: 
+    6:
+      title: 
+      reference: 
+      description: 
+    7:
+      title: 
+      reference: 
+      description:  
+    8:
+      title: 
+      reference: 
+      description:
+    9:
+      title: 
+      reference: 
+      description:
+    10:
+      title: 
+      reference: 
+      description:
+    J:
+      title: 
+      reference: 
+      description:
+    Q:
+      title: 
+      reference: 
+      description:
+    K:
+      title: 
+      reference: 
+      description:  
+    A:
+      title: 
+      reference: 
+      description: 
+  Input risk:
+    2: 
+      title: 
+      reference: 
+      description:
+    3: 
+      title: 
+      reference: 
+      description:
+    4: 
+      title: 
+      reference: 
+      description:
+    5:
+      title: 
+      reference: 
+      description: 
+    6:
+      title: 
+      reference: 
+      description:
+    7:
+      title: 
+      reference: 
+      description:
+    8:
+      title: 
+      reference: 
+      description:
+    9:
+      title: 
+      reference: 
+      description:
+    10:
+      title: 
+      reference: 
+      description:
+    J:
+      title: 
+      reference: 
+      description:
+    Q:
+      title: 
+      reference: 
+      description:
+    K:  
+      title: 
+      reference: 
+      description:
+    A: 
+      title: 
+      reference: 
+      description:
+  Output risk:
+    2:
+      title: 
+      reference: 
+      description: 
+    3: 
+      title: 
+      reference: 
+      description:
+    4: 
+      title: 
+      reference: 
+      description:
+    5: 
+      title: 
+      reference: 
+      description:
+    6:
+      title: 
+      reference: 
+      description:
+    7:
+      title: 
+      reference: 
+      description:
+    8:
+      title: 
+      reference: 
+      description:
+    9:
+      title: 
+      reference: 
+      description:
+    10:
+      title: 
+      reference: 
+      description:
+    J:
+      title: 
+      reference: 
+      description:
+    Q:
+      title: 
+      reference: 
+      description:
+    K:  
+      title: 
+      reference: 
+      description:
+    A: 
+      title: 
+      reference: 
+      description:
+  Dataset risk:
+    2: 
+      title: 
+      reference: 
+      description:
+    3: 
+      title: 
+      reference: 
+      description:
+    4: 
+      title: 
+      reference: 
+      description:
+    5: 
+      title: 
+      reference: 
+      description:
+    6:
+      title: 
+      reference: 
+      description:
+    7:
+      title: 
+      reference: 
+      description:
+    8:
+      title: 
+      reference: 
+      description:
+    9:
+      title: 
+      reference: 
+      description:
+    10:
+      title: 
+      reference: 
+      description:
+    J:
+      title: 
+      reference: 
+      description:
+    Q:
+      title: 
+      reference: 
+      description:
+    K: 
+      title: 
+      reference: 
+      description: 
+    A: 
+      title: 
+      reference: 
+      description:
