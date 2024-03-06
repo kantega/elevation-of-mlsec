@@ -12,7 +12,7 @@ The BIML papers (and other works) may be found at [berryvilleiml.com](https://be
 For anyone curious, the following describes our mapping from the main source of this work, the architectural risk analysis for machine learning systems (refered to as BIML-78). This might give you an idea of how the risk framework is applied in this card game. Please note that this game is in no way a comprehensive representation or application of the above risk frameworks. We have hand-picked the risks from the BIML risk analysis that we felt fit best in context of this game, and we have also pruned several overlaps between components (for example, looping is described in both the input and output components of the BIML framework).
 
 
-<img src="./biml-78-framework.png" alt="BIML Risk Framework for a Generic Machine Learning process" style="height: 400px;"/>
+<img src="./biml-78-framework.png" alt="BIML Risk Framework for a Generic Machine Learning process" style="height: 500px;"/>
 
 **Figure 1:** The BIML Risk Framework for a Generic Machine Learning process. Source: https://berryvilleiml.com/interactive/
 
@@ -37,8 +37,8 @@ This is also transparent in [cards.yaml](../cards.yaml), as every card reference
 ## Mapping from OWASP
 
 Risks from OWASP have been hand-picked to get something supplementary that hasn't been explicitly formulated by our main source, BIML. We have currently only picked two threats from the OWASP LLM top 10:
-- OWASP LLM08 (Excessive agency) in Output risk 10
-- OWASP LLM09 (Overreliance) in Output risk 4,
+- OWASP LLM08 (Excessive agency) in Output risk 10.
+- OWASP LLM09 (Overreliance) in Output risk 4.
 
 We find that the rest of the LLM risks described by OWASP are sufficiently covered by our main source in BIML's LLM analysis.
 
