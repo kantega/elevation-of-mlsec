@@ -34,7 +34,7 @@ The BIML components are mapped in the following way into DIMO:
 | Model risk      | 4. Learning algorithm*<br>5. Evaluation*<br> 6. Model <br> 8. Inference algorithm*       |
 | Output risk    | 8. Inference algorithm* <br>  9. Outputs  |
 
- \* Components marked with an asterisk (\*) may appear in several DIMO risk categories, as they in a sense form interfaces between components.
+ \* Components marked with an asterisk (\*) may appear in several DIMO risk categories, as they in a sense form interfaces between two things.
 
 ### Caveats
 
