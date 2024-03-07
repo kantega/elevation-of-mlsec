@@ -9,7 +9,7 @@ This work is based mainly on Berryville Institute for Machine Learnings (BIML)â€
 
 For this game we have created a derivative of the BIML risk framework into a simpler framework which considers four things: Dataset risks, Input risks, Model risks and Output risks (DIMO). The things also include risks associated with the "interfaces" between them. Read more about this in [dimo-risk-framework.md](./dimo-risk-framework.md).
 
-To anyone curious about how the risk frameworks are mapped to our cards and applied in this game, please check out [risk-frameworks.md](./ml-risk-frameworks/risk-frameworks.md) and [cards.yaml](cards.yaml). Please note that this game is *not* a comprehensive representation of the risks framework. To get a more complete overview of the identified ML and LLM risks, we recommend bringing the frameworks along to threat modeling sessions. The source material for Elevation of MLsec can found in the [ml-risk-frameworks](./ml-risk-frameworks/) folder.
+To anyone curious about how the risk frameworks are mapped to our cards and applied in this game, please check out [risk-frameworks.md](./ml-risk-frameworks/risk-frameworks.md) and [cards.yaml](./game/cards.yaml). Please note that this game is *not* a comprehensive representation of the risks framework. To get a more complete overview of the identified ML and LLM risks, we recommend bringing the frameworks along to threat modeling sessions. The source material for Elevation of MLsec can found in the [ml-risk-frameworks](./ml-risk-frameworks/) folder.
 
 ## Audience
 
@@ -22,10 +22,10 @@ The following roles may find use for these cards as a way to get started with se
 
 ## Resources
 - [The DIMO risk framework created for the game](./dimo-risk-framework.md)
-- [The deck](./elevation-of-MLsec-cards.pdf)
-- [Lined deck for print/cut](./print-ready/elevation-of-MLsec-print-ready-lined.pdf)
-- [How to play](./how-to-play.md)
-- [Overview of card contents](./cards.yaml)
+- [The deck](./game/elevation-of-MLsec-cards.pdf)
+- [Lined deck for print/cut](./game/print-ready/elevation-of-MLsec-print-ready-lined.pdf)
+- [How to play](./game/how-to-play.md)
+- [Overview of card contents in cards.yaml](./game/cards.yaml)
 - [Source materials: ML risk frameworks](./ml-risk-frameworks/risk-frameworks.md)
 
 ## Licenses

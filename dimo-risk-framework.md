@@ -1,5 +1,5 @@
 # The DIMO framework in Elevation of MLsec
-This file goes through the framework we have constructed based on BIML's work to form our four card suits: Dataset risks, Input risks, Model risks and Output risks (DIMO).
+This file goes through the framework we have constructed based on BIML's work to form our four card suits in Elevation of MLsec: Dataset risks, Input risks, Model risks and Output risks (DIMO). For more details, check out the game in the [./game](./game/) folder.
 
 ## The source material: BIML architectural risk analysis
 To make BIML's architectural risk analysis for machine learning systems (refered to as BIML-78) into a card game, we have introduced a derivative of it into our own simpler framework. Please note that this game is in no way a comprehensive representation or application of the BIML risk frameworks. We have hand-picked the risks from the BIML risk analysis that we felt fit best in context of this game, and we have also pruned several overlaps between components (for example, looping is described in both the input and output components of the BIML framework).
@@ -10,7 +10,7 @@ To make BIML's architectural risk analysis for machine learning systems (refered
 **Figure 1:** The BIML Risk Framework for a Generic Machine Learning process. Source: https://berryvilleiml.com/interactive/
 
 
-To see more details on how the BIML framework is mapped into our game, check out [cards.yaml](./cards.yaml), as every card references its origin identifier from the source material, and [risk-frameworks.md](./ml-risk-frameworks/risk-frameworks.md).
+To see more details on how the BIML framework is mapped into our game, check out [cards.yaml](./game/cards.yaml), as every card references its origin identifier from the source material, and [risk-frameworks.md](./ml-risk-frameworks/risk-frameworks.md).
 
 ## Introducing the DIMO framework in Elevation of MLsec
 
