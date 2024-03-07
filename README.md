@@ -21,12 +21,12 @@ The following roles may find use for these cards as a way to get started with se
 3) Software professionals integrating their "traditional software system" with an ML component can use these cards to get familiar with potential risks that come from integrating the ML component.
 
 ## Resources
-
+- [The DIMO risk framework created for the game](./dimo-risk-framework.md)
 - [The deck](./elevation-of-MLsec-cards.pdf)
-- [The deck with lines for print/cut](./print-ready/elevation-of-MLsec-print-ready-lined.pdf)
+- [Lined deck for print/cut](./print-ready/elevation-of-MLsec-print-ready-lined.pdf)
 - [How to play](./how-to-play.md)
 - [Overview of card contents](./cards.yaml)
-- [ML risk frameworks](./ml-risk-frameworks/risk-frameworks.md)
+- [Source materials: ML risk frameworks](./ml-risk-frameworks/risk-frameworks.md)
 
 ## Licenses
 
