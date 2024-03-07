@@ -13,7 +13,7 @@ To anyone curious about how the risk frameworks are mapped to our cards and appl
 
 ## Audience
 
-We hope that this game helps spread the message of the important work published by BIML and the OWASP foundation. 
+We hope that this game helps spread the message of the important work about securing AI, published by BIML and the OWASP foundation. 
 
 The following roles may find use for these cards as a way to get started with security engineering in an organization that is employing machine learning in some way:
 1) Security practitioners can use this game to perform relevant threat modeling coaching with ML engineering teams. 
