@@ -1,6 +1,7 @@
 # Elevation of MLsec
 Elevation of MLsec is an unofficial Machine Learning Security (MLsec) extension of Microsoft's Elevation of Privilege threat modeling card game. These playing cards portray risks associated with machine learning (ML) that have been identified by research groups. It is suitable to play this game with or without the original Elevation of Privilege deck depending on the nature of what you're threat modeling. The intention of these cards is primarily to improve the security *of* ML systems themselves, as opposed to using ML for security.
 
+<img src="./game/cards-example.png" alt="Example of a few cards from the game Elevation of MLsec" style="height: 500px;"/>
 
 ## Source material
 
