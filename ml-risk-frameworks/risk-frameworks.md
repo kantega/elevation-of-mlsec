@@ -17,7 +17,7 @@ For anyone curious, the following describes our mapping from the main source of 
 **Figure 1:** The BIML Risk Framework for a Generic Machine Learning process. Source: https://berryvilleiml.com/interactive/
 
 
-Mapping from BIML to our card suits goes as follows:
+The mapping from BIML to our card suits goes as follows:
 
 | BIML component (including LLM risks) | Elevation of MLsec suits                                 |
 |--------------------------------------|----------------------------------------------------------|
@@ -32,7 +32,18 @@ Mapping from BIML to our card suits goes as follows:
 | 9. Outputs                           | Output risk: 5, 6, 7, 9, K                              |
 | 10. System                           | Input risk: 7<br>Output risk: 2, 3, J, Q<br>Dataset risk: J |
 
+
 This is also transparent in [cards.yaml](../cards.yaml), as every card references its origin identifier from the source material.
+
+### Introducing the DIMO framework in Elevation of MLsec
+In this customized and simplified version of the BIML risk framework, we collect all the 9 components of the BIML risk framework into four categories, which form our four card suits. The four things (3. Datasets, 6. Inputs, 7. Model, 9. Outputs) lie exclusively within their suit, while the interfaces (1. Raw data in the world, 2. Dataset assembly, 4. Learning algorithm, 5. Evaluation, 8. Inference algorithms) and the system as a whole may appear in several suits. This forms our framework of Dataset risk, Input risk, Model risk and Output risk (DIMO), which you can see visualized in Figure 2. Read more about this in [dimo-framework.md](../dimo-framework.md).
+
+
+<img src="./DIMO-eoml.png" alt="The DIMO model presented in Elevation of Mlsec" style="height: 500px;"/>
+
+**Figure 2** The DIMO framework in Elevation of MLsec, as a simplified version of the BIML risk framework.
+
+
 
 ## Mapping from OWASP
 
