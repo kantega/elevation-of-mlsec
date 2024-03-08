@@ -11,7 +11,7 @@ They then have to identity a vulnerability in the system model corresponding to 
 If they are unable to do so, the player clockwise of them gets to attempt to identify a vulnerability.
 This process continues until either a player successfully identifies a vulnerability matching the card or all players have failed to do so.
 
-If a player successfully identifies a vulnerability they should write down the vulnerability they identified, and place the threat card in front of themselves.
+If a player successfully identifies a vulnerability, they should write down the vulnerability they identified and place the threat card in front of themselves.
 The game then continues with the player clockwise of them drawing a new card from the deck.
 
 If no player manages to identify a vulnerability for a card, then the card is removed from play and the player who originally drew it from the deck gets to draw a new card.
