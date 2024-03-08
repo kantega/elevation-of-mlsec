@@ -6,8 +6,8 @@
 4. After shuffling, put the deck of cards face down next to the system model. 
 5. Decide the starting player by a method of the group's choice. Simple solutions include having the youngest or tallest player start.
 ### Playing the game
-The player who gets to start the game will draw the top card of the deck and place it face up next to the system.
-They then have to identity a vulnerability in the system corresponding to the drawn threat.
+The player who gets to start the game will draw the top card of the deck and place it face up next to the system model.
+They then have to identity a vulnerability in the system model corresponding to the drawn threat.
 If they are unable to do so, the player clockwise of them gets to attempt to identify a vulnerability.
 This process continues until either a player successfully identifies a vulnerability matching the card or all players have failed to do so.
 
