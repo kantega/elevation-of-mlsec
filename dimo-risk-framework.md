@@ -5,7 +5,7 @@ This file goes through the framework we have constructed based on BIML's work to
 
 
 ## The source material: BIML architectural risk analysis
-To make BIML's architectural risk analysis for machine learning systems (refered to as BIML-78) into a card game, we have introduced a derivative of it into our own simpler framework. Please note that this game is in no way a comprehensive representation or application of the BIML risk frameworks. We have hand-picked the risks from the BIML risk analysis that we felt fit best in context of this game, and we have also pruned several overlaps between components (for example, looping is described in both the input and output components of the BIML framework).
+To make BIML's architectural risk analysis for machine learning systems (refered to as BIML-78) into a card game, we have introduced a derivative of it into our own simpler framework. Please note that this game is not a comprehensive representation or application of the BIML risk frameworks. We have hand-picked the risks from the BIML risk analysis that we felt fit best in context of this game. We have also pruned several overlaps between components (for example, looping is described in both the input and output components of the BIML framework). 
 
 
 <img src="./ml-risk-frameworks/biml-78-framework.png" alt="BIML Risk Framework for a Generic Machine Learning process" style="height: 600px;"/>
@@ -17,7 +17,7 @@ To see more details on how the BIML framework is mapped into our game, check out
 
 ## Introducing the DIMO framework in Elevation of MLsec
 
-To make the BIML risk framework apply for a card game, we have simplified the BIML risk framework in a way so that it falls into four risk categories (termed with suits in context of the game): Dataset risk, Input risk, Model risk and Output risk, appreviated with a suggested mnemonic of DIMO. In the DIMO framework we form categories from four *things* (rectangulars in the BIML framework): an ML model, its datasets, inputs and outputs. We consider the ovals (and the polygon) interfaces between *things*, and therefore they can be considered risks of the things, depending on which interface (and which part of it) they lie in. Risks about the system as a whole can also be isolated to one component in our context as it usually is most present in one of the components. This recategorization allows us to put risks from all 9 components (and the system component) into a framework consisting of only four suits, which fits well into four card suits.
+To make the BIML risk framework apply for a card game, we have simplified the BIML risk framework in a way so that it falls into four risk categories (termed with suits in context of the game): Dataset risk, Input risk, Model risk and Output risk, appreviated with a suggested mnemonic of DIMO. In the DIMO framework we form our suits from four *things* (rectangulars in the BIML framework): an ML model, its datasets, inputs and outputs. We consider the ovals (and the polygon) and processes or data that form *interfaces* between the *things*. Therefore they can be considered risks of the things, depending on which interface (and which part of it) they lie in. Risks about the system as a whole can also be isolated to one component in our context as it usually is most present in one of the components. This recategorization allows us to put risks from all 9 components (and the system component) into a framework consisting of only four suits, which fits well into the four card suits that consistute a 52 card deck.
 
 <img src="./ml-risk-frameworks/DIMO-eoml.png" alt="The DIMO model presented in Elevation of Mlsec" style="height: 600px;"/>
 
@@ -36,8 +36,10 @@ The BIML components are mapped in the following way into DIMO:
 
  \* Components marked with an asterisk (\*) may appear in several DIMO risk categories, as they in a sense form interfaces between two things.
 
+As LLM risks are formed around the same risk framework (which is formulated based on a generic ML lifecycle), risks originating from the BIML-LLM-24 risk framework fit well into the same categories.
+
 ### Caveats
 
-Simplifying the BIML framework in this way is prone to sacrificing details and nuances that may be important to consider in a risk analysis process. Therefore we recommend that you always have the BIML framework at hand and think carefully about how card-oriented risks apply when considering the "full" framework.
+Simplifying the BIML framework in this way is prone to sacrificing details and nuances that may be important to consider in a risk analysis process. Also, it's important to note that this game is not a comprehensive representation or application of the BIML architectural risk frameworks. We have hand-picked the risks from the BIML risk analyses that we felt fit best in context of this game. Only 50 out of 78 generic BIML risks and 81 BIML-LLM risks are present in this game (although BIML has several redundant risks in their framework). We consider the OWASP top 10 for LLMs fully covered by the BIML risks included, also with the two from their LLM top 10 list. 
 
-Also, the order and numbering of the playing cards does not reflect a true ranking of which risks are more important than others.
+Therefore we recommend that you always have the BIML framework at hand and think carefully about how card-oriented risks apply when considering the "full" framework. The risks in the game have not been rigorously ordered based on any weighting of how important the risks are. The ordering is generally rather arbitrary (although the for J-K cards we have attempted to choose important risks based on BIML's lists).
