@@ -1,7 +1,7 @@
 # The DIMO framework in Elevation of MLsec
 This file goes through the framework we have constructed based on BIML's work to form our four card suits in Elevation of MLsec: Dataset risks, Input risks, Model risks and Output risks (DIMO). For more details, check out the game in the [./game](./game/) folder.
 
-<img src="./game/cards-example.png" alt="Example of a few cards from the game Elevation of MLsec" style="height: 500px;"/>
+<img src="./game/cards-example.png" alt="Example of a few cards from the game Elevation of MLsec" />
 
 
 ## The source material: BIML architectural risk analysis
