@@ -12,7 +12,7 @@ The BIML papers (and other works) may be found at [berryvilleiml.com](https://be
 For anyone curious, the following describes our mapping from the main source of this work, the architectural risk analysis for machine learning systems (refered to as BIML-78). This might give you an idea of how the risk framework is applied in this card game. Please note that this game is in no way a comprehensive representation or application of the above risk frameworks. We have hand-picked the risks from the BIML risk analysis that we felt fit best in context of this game, and we have also pruned several overlaps between components (for example, looping is described in both the input and output components of the BIML framework).
 
 
-<img src="./biml-78-framework.png" alt="BIML Risk Framework for a Generic Machine Learning process" style="height: 500px;"/>
+<img src="./biml-78-framework.png" alt="BIML Risk Framework for a Generic Machine Learning process" />
 
 **Figure 1:** The BIML Risk Framework for a Generic Machine Learning process. Source: https://berryvilleiml.com/interactive/
 
@@ -39,7 +39,7 @@ This is also transparent in [cards.yaml](../cards.yaml), as every card reference
 In this customized and simplified version of the BIML risk framework, we collect all the 9 components of the BIML risk framework into four categories, which form our four card suits. The four things (3. Datasets, 6. Inputs, 7. Model, 9. Outputs) lie exclusively within their suit, while the interfaces (1. Raw data in the world, 2. Dataset assembly, 4. Learning algorithm, 5. Evaluation, 8. Inference algorithms) and the system as a whole may appear in several suits. This forms our framework of Dataset risk, Input risk, Model risk and Output risk (DIMO), which you can see visualized in Figure 2. Read more about this in [dimo-framework.md](../dimo-framework.md).
 
 
-<img src="./DIMO-eoml.png" alt="The DIMO model presented in Elevation of Mlsec" style="height: 500px;"/>
+<img src="./DIMO-eoml.png" alt="The DIMO model presented in Elevation of Mlsec" />
 
 **Figure 2** The DIMO framework in Elevation of MLsec, as a simplified version of the BIML risk framework.
 
