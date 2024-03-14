@@ -36,7 +36,7 @@ The mapping from BIML to our card suits goes as follows:
 This is also transparent in [cards.yaml](../cards.yaml), as every card references its origin identifier from the source material.
 
 ### Introducing the DIMO framework in Elevation of MLsec
-In this customized and simplified version of the BIML risk framework, we collect all the 9 components of the BIML risk framework into four categories, which form our four card suits. The four things (3. Datasets, 6. Inputs, 7. Model, 9. Outputs) lie exclusively within their suit, while the interfaces (1. Raw data in the world, 2. Dataset assembly, 4. Learning algorithm, 5. Evaluation, 8. Inference algorithms) and the system as a whole may appear in several suits. This forms our framework of Dataset risk, Input risk, Model risk and Output risk (DIMO), which you can see visualized in Figure 2. Read more about this in [dimo-framework.md](../dimo-framework.md).
+In this customized and simplified version of the BIML risk framework, we collect all the 9 components of the BIML risk framework into four categories, which form our four card suits. The four things (3. Datasets, 6. Inputs, 7. Model, 9. Outputs) lie exclusively within their suit, while the interfaces (1. Raw data in the world, 2. Dataset assembly, 4. Learning algorithm, 5. Evaluation, 8. Inference algorithms) and the system as a whole may appear in several suits. This forms our framework of Dataset risk, Input risk, Model risk and Output risk (DIMO), which you can see visualized in Figure 2. Read more about this in [game-risk-framework.md](../game-risk-framework.md).
 
 
 <img src="./DIMO-eoml.png" alt="The DIMO model presented in Elevation of Mlsec" />
