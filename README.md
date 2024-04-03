@@ -35,7 +35,7 @@ Card templates are inspired by the Elevation of Privilege card game ([https://ww
 
 Contents are based on Berryville Institute for Machine Learning (BIML) Architectural Risk Frameworks for Machine Learning and Large Language Models (BIML-78 and BIML-LLM24) which are published under a Creative Commons Attribution-Share Alike 3.0 License. We have also used the OWASP Top 10 for Large Language Model Applications, which is  published under Creative Commons Attribution-ShareAlike v4.0. Parts of the original work have been changed, and some descriptions are copied verbatim. We have added the original papers in the ML-risk-frameworks folder.
 
-Elevation of MLSec is © 2024 Kantega AS. This work is licensed under the Creative Commons Attribution 4.0 International license ([https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)).
+Elevation of MLSec is © 2024 Kantega AS. This work is licenced under the Creative Commons Attribution-ShareAlike 4.0 International license ([https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)).
 
 ## Working group
 - Author: Elias Brattli Sørensen
