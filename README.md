@@ -12,6 +12,11 @@ For this game we have created a derivative of the BIML risk framework into a sim
 
 To anyone curious about how the risk frameworks are mapped to our cards and applied in this game, please check out [risk-frameworks.md](./ml-risk-frameworks/risk-frameworks.md) and [cards.yaml](./game/cards.yaml). Please note that this game is *not* a comprehensive representation of the risks framework. To get a more complete overview of the identified ML and LLM risks, we recommend bringing the frameworks along to threat modeling sessions. The source material for Elevation of MLsec can found in the [ml-risk-frameworks](./ml-risk-frameworks/) folder.
 
+## Available versions
+
+- There is a digital version published by TNG Technology Consulting GmbH, as a game mode in their Elevation of Privilege game: https://github.com/TNG/elevation-of-privilege. 
+- The game can be purchased in print at Agile Stationery: https://agilestationery.com/collections/threat-modeling/products/elevation-of-machine-learning-security-card-game
+
 ## Audience
 
 We hope that this game helps spread the message of the important work about securing AI, published by BIML and the OWASP foundation. 
