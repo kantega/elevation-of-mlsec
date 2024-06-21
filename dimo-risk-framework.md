@@ -5,7 +5,7 @@ This file goes through the framework we have constructed based on BIML's work to
 
 
 ## The source material: BIML architectural risk analysis
-To make BIML's architectural risk analysis for machine learning systems (refered to as BIML-78) into a card game, we have introduced a derivative of it into our own simpler framework. Please note that this game is not a comprehensive representation or application of the BIML risk frameworks. We have hand-picked the risks from the BIML risk analysis that we felt fit best in context of this game. We have also pruned several overlaps between components (for example, looping is described in both the input and output components of the BIML framework). 
+To make BIML's architectural risk analysis for machine learning systems (refered to as BIML-78) into a card game, we have introduced a derivative of it into our own simpler framework. Please note that this game is not a comprehensive representation or application of the BIML risk frameworks. We have hand-picked the risks from the BIML risk analysis that we felt fit best in the context of this game. We have also pruned several overlaps between components (for example, looping is described in both the input and output components of the BIML framework). 
 
 
 <img src="./ml-risk-frameworks/biml-78-framework.png" alt="BIML Risk Framework for a Generic Machine Learning process"/>
