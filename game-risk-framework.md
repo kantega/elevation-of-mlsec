@@ -1,7 +1,7 @@
 # The DIMO framework in Elevation of MLsec
 This file goes through the framework we have constructed based on BIML's work to form our four card suits in Elevation of MLsec: Dataset risks, Input risks, Model risks and Output risks (DIMO). For more details, check out the game in the [./game](./game/) folder.
 
-<img src="./game/cards-example.png" alt="Example of a few cards from the game Elevation of MLsec" style="height: 500px;"/>
+<img src="./game/cards-example.png" alt="Example of a few cards from the game Elevation of MLsec" />
 
 
 ## The source material: BIML architectural risk analysis
@@ -42,4 +42,4 @@ As LLM risks are formed around the same risk framework (which is formulated base
 
 Simplifying the BIML framework in this way is prone to sacrificing details and nuances that may be important to consider in a risk analysis process. Also, it's important to note that this game is not a comprehensive representation or application of the BIML architectural risk frameworks. We have hand-picked the risks from the BIML risk analyses that we felt fit best in context of this game. Only 50 out of 78 generic BIML risks and 81 BIML-LLM risks are present in this game (although BIML has several redundant risks in their framework). We consider the OWASP top 10 for LLMs fully covered by the BIML risks included, also with the two from their LLM top 10 list. 
 
-Therefore we recommend that you always have the BIML framework at hand and think carefully about how card-oriented risks apply when considering the "full" framework. The risks in the game have not been rigorously ordered based on any weighting of how important the risks are. The ordering is generally rather arbitrary (although the for J-K cards we have attempted to choose important risks based on BIML's lists).
+Therefore we recommend that you always have the BIML framework at hand and think carefully about how card-oriented risks apply when considering the "full" framework, and use the game as a way to get started with thinking about these risks. The risks in the game have not been rigorously ordered based on any weighting of how important the risks are. The ordering is generally rather arbitrary (although the for J-K cards we have attempted to choose important risks based on BIML's lists).
