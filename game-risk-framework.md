@@ -17,13 +17,13 @@ To see more details on how the BIML framework is mapped into our game, check out
 
 ## Introducing the DIMO framework in Elevation of MLsec
 
-To make the BIML risk framework apply for a card game, we have simplified the BIML risk framework in a way so that it falls into four risk categories (termed with suits in context of the game): Dataset risk, Input risk, Model risk and Output risk, abbreviated with a suggested mnemonic of DIMO. In the DIMO framework we form our suits from four *things* (rectangles in the BIML framework): 3. datasets, 6.  inputs,  7. model, and 9. outputs. The the ovals in components 1, 2, 4, 5 and 8 (and the polygon in component 1) are processes or data pools that form *interfaces* between the things. Therefore their risks can be considered risks of the things with which they interface. Risks about the system as a whole can also be isolated to one component in our context as it usually is most present in one of the components. This recategorization allows us to put risks from all 9 components (and the system component) into a framework consisting of only four suits, which fits well into the four card suits that constistute a 52 card deck.
+To make the BIML risk framework apply for a card game, we have simplified the BIML risk framework in a way so that it falls into four risk categories (termed with suits in context of the game): Dataset risk, Input risk, Model risk and Output risk, abbreviated with a suggested mnemonic of DIMO. In the DIMO framework we form our suits from four *objects* (rectangles in the BIML framework): 3. datasets, 6.  inputs,  7. model, and 9. outputs. The the ovals in components 1, 2, 4, 5 and 8 (and the polygon in component 1) are processes or data pools that form *interfaces* between the objects. Therefore their risks can be considered risks of the object with which they interface. Risks about the system as a whole can also be isolated to one component in our context as it usually is most present in one of the components. This recategorization allows us to put risks from all 9 components (and the system component) into a framework consisting of only four suits, which fits well into the four card suits that constistute a 52 card deck.
 
 <img src="./ml-risk-frameworks/DIMO-eoml.png" alt="The DIMO model presented in Elevation of Mlsec"/>
 
 **Figure 2:** The DIMO framework in Elevation of MLsec, as a simplified version of the BIML risk framework.
 
-In this customized and simplified version of the BIML risk framework, we collect all the 9 components of the BIML risk framework into four categories, which form our four card suits. The four things (3. Datasets, 6. Inputs, 7. Model, 9. Outputs) lie exclusively within their suit, while the interfaces (1. Raw data in the world, 2. Dataset assembly, 4. Learning algorithm, 5. Evaluation, 8. Inference algorithms) and the system as a whole may appear in several suits.
+In this customized and simplified version of the BIML risk framework, we collect all the 9 components of the BIML risk framework into four categories, which form our four card suits. The four objects (3. Datasets, 6. Inputs, 7. Model, 9. Outputs) lie exclusively within their suit, while the interfaces (1. Raw data in the world, 2. Dataset assembly, 4. Learning algorithm, 5. Evaluation, 8. Inference algorithms) and the system as a whole may appear in several suits.
 
 The BIML components are mapped in the following way into DIMO: 
 
@@ -34,7 +34,7 @@ The BIML components are mapped in the following way into DIMO:
 | Model risk      | 4. Learning algorithm*<br>5. Evaluation*<br> 6. Model <br> 8. Inference algorithm*       |
 | Output risk    | 8. Inference algorithm* <br>  9. Outputs  |
 
- \* Components marked with an asterisk (\*) may appear in several DIMO risk categories, as they in a sense form interfaces between two or more things.
+ \* Components marked with an asterisk (\*) may appear in several DIMO risk categories, because as a process, they in a sense form interfaces between two or more objects.
 
 As LLM risks are formed around the same risk framework (which is formulated based on a generic ML lifecycle), risks originating from the BIML-LLM-24 risk framework fit well into the same categories.
 
