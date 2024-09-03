@@ -43,3 +43,24 @@ As LLM risks are formed around the same risk framework (which is formulated base
 Simplifying the BIML framework in this way is prone to sacrificing details and nuances that may be important to consider in a risk analysis process. Also, it's important to note that this game is not a comprehensive representation or application of the BIML architectural risk frameworks. We have hand-picked the risks from the BIML risk analyses that we felt fit best in context of this game. Only 50 out of 78 generic BIML risks and 81 BIML-LLM risks are present in this game (although BIML has several redundant risks in their framework). We consider the OWASP top 10 for LLMs fully covered by the BIML risks included, also with the two from their LLM top 10 list. 
 
 Therefore we recommend that you always have the BIML framework at hand and think carefully about how card-oriented risks apply when considering the "full" framework, and use the game as a way to get started with thinking about these risks. The risks in the game have not been rigorously ordered based on any weighting of how important the risks are. The ordering is generally rather arbitrary (although the for J-K cards we have attempted to choose important risks based on BIML's lists).
+
+
+### BIML Risk ranking
+
+Because no rigid ranking of all the BIML risks exists, and BIML only made a top 10 list, this game has a somewhat arbitrary ranking of its own. 
+The top 10 list defined by BIML has mostly been mapped to high-ranking cards (see the table below). The ones that were ommitted from the game (6. Data trustworthyness\[raw:1:data confidentiality\]) and (7. Reproducibility) were not selected because of their rather narrow scope. In cases when it's completely ambiguous whether risks are ranked higher, they were just placed quite randomly on the deck. 
+
+In the EoP game, the score of a risks plays no realn role except as a means to win the "Spades" part of the game. The card numbers do not play a meaningful role as far as severity or likeliness is considered when talking about the risks.
+
+| BIML top 10 risk |  Game card    | 
+|-------------------|----------------------------|
+| 1. Adversarial examples \[input:1:adversarial examples\]  |  Input K   |
+| 2. Data poisioning \[input:1:adversarial examples\]  | Dataset K   |
+| 3. Online system manipulation \[alg:1:online\]     |   Model 5    |
+| 4. Transfer learning attack\[model:2:improper re-use\] / \[model:2:trojan\]  | Model  K & Q |
+| 5. Data confidentiality\[raw:1:data confidentiality\] | Dataset Q |
+| 6. Data trustworthyness\[raw:1:data confidentiality\] | Not in the game |
+| 7. Reproducibility \[alg:2:reproducibility\] | Not in the game |
+| 8. Overfitting \[eval:1:overfitting\] | Model 6 |
+| 9. Encoding integrity \[assembly:1:encoding integrity\] | Dataset 7 |
+| 10. Output integrity \[output:1:direct\] | Output K |
