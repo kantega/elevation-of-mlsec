@@ -21,11 +21,13 @@ To anyone curious about how the risk frameworks are mapped to our cards and appl
 ## Audience
 
 We hope that this game helps spread the message of the important work about securing AI, published by BIML and the OWASP foundation. 
+It is relevant if you are building an ML system, or if you are for example buying LLMs like CoPilot.
 
 The following roles may find use for these cards as a way to get started with security engineering in an organization that is employing machine learning in some way:
 1) Security practitioners can use this game to perform relevant threat modeling coaching with ML engineering teams. 
 2) ML practitioners and engineers may use this deck as part of their thread modeling process. 
 3) Software professionals integrating their "traditional software system" with an ML component can use these cards to get familiar with potential risks that come from integrating the ML component.
+4) Decision makers can use the game to review the risks that an ML system brings into their stack when purchasing something like an LLM system.
 
 ## Resources
 - [BIML Risk framework adjusted for the game](./game-risk-framework.md)
