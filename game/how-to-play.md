@@ -12,7 +12,7 @@ When all the cards have been played, whoever has the most points wins. Don’t f
 ## Setup cheatsheet
 (Taken from https://github.com/adamshostack/eop/blob/master/cheatsheet.md) 
 
-1. Draw a system model where everyone can see it, for example on a whiteboard or on a large screen.
+1. Draw a system model where everyone can see it, for example on a whiteboard or on a large screen, or an A2/A3 paper on the table.
 2. Ask everyone to set aside skepticism for 15 minutes.
 3. Setup details
     - Goal: Win hands by connecting the threat on the card to the system and playing the highest card of the current suit.
