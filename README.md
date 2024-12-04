@@ -16,20 +16,24 @@ To anyone curious about how the risk frameworks are mapped to our cards and appl
 
 - There is a digital version published by TNG Technology Consulting GmbH, as a game mode in their Elevation of Privilege game: https://github.com/TNG/elevation-of-privilege. 
 - The game can be purchased in print at Agile Stationery: https://agilestationery.com/collections/threat-modeling/products/elevation-of-machine-learning-security-card-game
+- Download the decks and print [the deck](./game/elevation-of-MLsec-cards.pdf) yourself, alternatively hire a printing company using the [print-ready deck](./game/print-ready/elevation-of-MLsec-Cards-71x121mm-June2024-v2-bleeds-edges.pdf).
 
 ## Audience
 
 We hope that this game helps spread the message of the important work about securing AI, published by BIML and the OWASP foundation. 
+It is relevant if you are building an ML system, or if you are for example buying LLMs like CoPilot.
 
 The following roles may find use for these cards as a way to get started with security engineering in an organization that is employing machine learning in some way:
 1) Security practitioners can use this game to perform relevant threat modeling coaching with ML engineering teams. 
 2) ML practitioners and engineers may use this deck as part of their thread modeling process. 
 3) Software professionals integrating their "traditional software system" with an ML component can use these cards to get familiar with potential risks that come from integrating the ML component.
+4) Decision makers can use the game to review the risks that an ML system brings into their stack when purchasing something like an LLM system.
 
 ## Resources
 - [BIML Risk framework adjusted for the game](./game-risk-framework.md)
 - [The deck](./game/elevation-of-MLsec-cards.pdf)
 - [Lined deck for print/cut](./game/print-ready/elevation-of-MLsec-print-ready-lined.pdf)
+- [Print-ready with bleeds/edges for professional printing](./game/print-ready/elevation-of-MLsec-print-ready-lined.pdf)
 - [How to play](./game/how-to-play.md)
 - [Overview of card contents in cards.yaml](./game/cards.yaml)
 - [Source materials: ML risk frameworks](./ml-risk-frameworks/risk-frameworks.md)
@@ -48,5 +52,6 @@ Elevation of MLSec is © 2024 Kantega AS. This work is licenced under the Creati
 
 ### Acknowledgements
 We would like to thank Emil Jakobus Schroeder, Edvard Kristoffer Karlsen and August Heltne for QA and advice, and our employer Kantega AS for letting us produce this game.
+Also special thanks to Devika Gibbs at Agile Stationery for the collaboration of making printed decks available online.
 
 

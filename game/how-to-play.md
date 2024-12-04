@@ -1,7 +1,7 @@
 # How to play
 
 ## Rules (spades variant)
-Draw a diagram of the system that you threat model / risk analyze before dealing cards. Play like “Spades”, where everyone must play in the same suit if they can (just play a different suit if you don't have cards from the suit in play), and the highest “bidder” takes the trick and may start the next round. In Elevation of MLsec, cards in the Dataset risk suit are trump. Use a diagram / model of an ML system, ML lifecycle or a system with an ML component. The player should be able to explain how the risk relates to the model. In case of an argument, when something is not clear from the diagram, the player may make the necessary assumptions about the system to call a risk, or the team may agree upon a playbook for their system.
+Draw a diagram of the system that you threat model / risk analyze before dealing cards. Use a diagram / model of an ML system, ML lifecycle or a system with an ML component. Play like “Spades”, where everyone must play in the same suit if they can (just play a different suit if you don't have cards from the suit in play), and the highest “bidder” takes the trick and may start the next round. In Elevation of MLsec, cards in the Dataset risk suit are trump.  The player should be able to explain how the risk relates to the model. In case of an argument, when something is not clear from the diagram, the player may make the necessary assumptions about the system to call a risk, or the team may agree upon a playbook for their system.
 
 The ace of each suit is an open risk card. When a ace is played, the player must identify a risk not listed on another card. To help with this, see the summary cards in the back of the deck.
 
@@ -12,7 +12,7 @@ When all the cards have been played, whoever has the most points wins. Don’t f
 ## Setup cheatsheet
 (Taken from https://github.com/adamshostack/eop/blob/master/cheatsheet.md) 
 
-1. Draw a system model where everyone can see it, for example on a whiteboard or on a large screen.
+1. Draw a system model where everyone can see it, for example on a whiteboard or on a large screen, or an A2/A3 paper on the table.
 2. Ask everyone to set aside skepticism for 15 minutes.
 3. Setup details
     - Goal: Win hands by connecting the threat on the card to the system and playing the highest card of the current suit.

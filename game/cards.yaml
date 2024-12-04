@@ -284,7 +284,7 @@ suits:
     J:
       title: Data integrity
       source: BIML_78
-      identifier: system:2:data integrity
+      identifier: system:7:data integrity
       description: If distributed datasets do not have proper integrity checks in place, data can be tampered with undetected as it passes between components.
     Q:
       title: Data confidentiality
