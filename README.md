@@ -1,4 +1,4 @@
-# Elevation of MLsec
+og# Elevation of MLsec
 Elevation of MLsec is an unofficial Machine Learning Security (MLsec) extension of Microsoft's Elevation of Privilege threat modeling card game. These playing cards portray risks associated with machine learning (ML) that have been identified by research groups. It is suitable to play this game with or without the original Elevation of Privilege deck depending on the nature of what you're threat modeling. The intention of these cards is primarily to improve the security *of* ML systems themselves, as opposed to using ML for security.
 
 <img src="./game/cards-example.png" alt="Example of a few cards from the game Elevation of MLsec"/>
@@ -44,7 +44,7 @@ Card templates are inspired by the Elevation of Privilege card game ([https://ww
 
 Contents are based on Berryville Institute for Machine Learning (BIML) Architectural Risk Frameworks for Machine Learning and Large Language Models (BIML-78 and BIML-LLM24) which are published under a Creative Commons Attribution-Share Alike 3.0 License. We have also used the OWASP Top 10 for Large Language Model Applications, which is  published under Creative Commons Attribution-ShareAlike v4.0. Parts of the original work have been changed, and some descriptions are copied verbatim. We have added the original papers in the ML-risk-frameworks folder.
 
-Elevation of MLSec is © 2024 Kantega AS. This work is licenced under the Creative Commons Attribution-ShareAlike 4.0 International license ([https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)).
+Elevation of MLSec was created at Kantega AS. This work is licenced under the Creative Commons Attribution-ShareAlike 4.0 International license ([https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)).
 
 ## Working group
 - Author: Elias Brattli Sørensen
